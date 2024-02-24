@@ -1,0 +1,33 @@
+body {
+    background-color: #dcdcdc; /* Sayfa arka planını beyaz yap */
+    margin: 0;
+    font-family:'Times New Roman', Times, serif /* Türkçe harfleri destekleyen bir font kullan */
+}
+
+.container {
+    position: absolute;
+    top: 50%; /* Dikeyde ortalamak için yüksekliği 50% yap */
+    left: 50%; /* Yatayda ortalamak için sol kenarı 50% yap */
+    transform: translate(-50%, -50%); /* Ortalamak için CSS transform kullan */
+    background-color: #4da6ff; /* Kutunun arka planını mavi yap */
+    padding: 20px;
+    border-radius: 10px; /* Köşeleri yuvarlat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Hafif bir gölge efekti ekle */
+}
+
+.neon-text {
+    color: #00f; /* Metin rengini mavi yap */
+    font-size: 40px; /* Metin boyutunu ayarlayın */
+    text-align: center;
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f, 0 0 150px #00f; /* Neon efekti */
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
